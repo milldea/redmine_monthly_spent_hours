@@ -27,5 +27,3 @@ else
 		end
 	end
 end
-
-# Rails.application.config.i18n.load_path += Dir[File.join(__dir__, 'config', 'locales', '*.yml')]
