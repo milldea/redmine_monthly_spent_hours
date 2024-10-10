@@ -9,8 +9,8 @@ module MonthlySpentHours
           @last_month_spent_hours ||= spent_hours_for_month(1)
         end
 
-        def current_month_spent_hours
-          @current_month_spent_hours ||= spent_hours_for_month(0)
+        def this_month_spent_hours
+          @this_month_spent_hours ||= spent_hours_for_month(0)
         end
         
         # with children issue
@@ -18,8 +18,8 @@ module MonthlySpentHours
           @last_month_total_spent_hours ||= calculate_spent_hours(1)
         end
 
-        def current_month_total_spent_hours
-          @current_month_total_spent_hours ||= calculate_spent_hours(0)
+        def this_month_total_spent_hours
+          @this_month_total_spent_hours ||= calculate_spent_hours(0)
         end
 
         private

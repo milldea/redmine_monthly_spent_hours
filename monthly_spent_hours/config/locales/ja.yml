@@ -1,4 +1,4 @@
 ja:
   monthly_spent_hours:
     label_last_month_hours: "先月の合計作業時間"
-    label_current_month_hours: "今月の合計作業時間"
+    label_this_month_hours: "今月の合計作業時間"

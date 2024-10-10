@@ -10,9 +10,9 @@ module MonthlySpentHours
           partial: 'issues/monthly_spent_hours',
           locals: {
             last_month_spent_hours: issue.last_month_spent_hours,
-            current_month_spent_hours: issue.current_month_spent_hours,
+            this_month_spent_hours: issue.this_month_spent_hours,
             last_month_total_spent_hours: issue.last_month_total_spent_hours,
-            current_month_total_spent_hours: issue.current_month_total_spent_hours,
+            this_month_total_spent_hours: issue.this_month_total_spent_hours,
           }
         })
       else
