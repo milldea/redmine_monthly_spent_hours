@@ -6,7 +6,7 @@ require_dependency File.expand_path('../app/helpers/monthly_spent_hours_helper',
 Redmine::Plugin.register :monthly_spent_hours do
   name 'Monthly Spent Hours plugin'
   author 'Author name'
-  description 'Add last month and this month'
+  description 'Add last and this month spent time details'
   version '0.0.1'
   url 'http://example.com/path/to/plugin'
   author_url 'http://example.com/about'
