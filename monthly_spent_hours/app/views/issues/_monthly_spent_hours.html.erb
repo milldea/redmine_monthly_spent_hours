@@ -1,0 +1,10 @@
+<%= issue_fields_rows do |rows| 
+    if User.current.allowed_to?(:view_time_entries, @project)
+        if last_month_total_spent_hours > 0
+            rows.right l(:label_last_month_hours, scope: :monthly_spent_hours), issue_spent_hours_extended_details(last_month_spent_hours, last_month_total_spent_hours), :class => 'spent-time'
+        end
+        if current_month_total_spent_hours > 0
+            rows.right l(:label_current_month_hours, scope: :monthly_spent_hours), issue_spent_hours_extended_details(current_month_spent_hours, current_month_total_spent_hours), :class => 'spent-time'
+        end
+    end
+end %>
