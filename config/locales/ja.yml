@@ -1,4 +1,4 @@
 ja:
   redmine_monthly_spent_hours:
-    label_last_month_hours: "先月の合計作業時間"
-    label_this_month_hours: "今月の合計作業時間"
+    label_last_month_hours: "先月の作業時間"
+    label_this_month_hours: "今月の作業時間"
