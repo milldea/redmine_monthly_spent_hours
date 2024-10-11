@@ -1,6 +1,6 @@
 module RedmineMonthlySpentHoursHelper
-  def issue_spent_hours_extended_details(spent_hours, total_spent_hours)
-    if total_spent_hours == spent_hours
+  def issue_spent_hours_extended_details(spent_hours, total_spent_hours, children_flag)
+    if !children_flag
       l_hours_short(spent_hours)
     else
       s = l_hours_short(spent_hours)
