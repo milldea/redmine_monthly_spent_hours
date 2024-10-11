@@ -1,4 +1,4 @@
-module MonthlySpentHoursHelper
+module RedmineMonthlySpentHoursHelper
   def issue_spent_hours_extended_details(spent_hours, total_spent_hours)
     if total_spent_hours == spent_hours
       l_hours_short(spent_hours)
@@ -10,6 +10,6 @@ module MonthlySpentHoursHelper
   end  
 end
 
-unless ApplicationHelper.included_modules.include? MonthlySpentHoursHelper
-  ApplicationHelper.send(:include, MonthlySpentHoursHelper)
+unless ApplicationHelper.included_modules.include? RedmineMonthlySpentHoursHelper
+  ApplicationHelper.send(:include, RedmineMonthlySpentHoursHelper)
 end

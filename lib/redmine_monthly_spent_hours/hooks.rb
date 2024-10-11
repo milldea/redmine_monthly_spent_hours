@@ -1,13 +1,13 @@
 # 修正後のフッククラス
-module MonthlySpentHours
+module RedmineMonthlySpentHours
   class Hooks < Redmine::Hook::ViewListener
-    render_on :view_issues_show_details_bottom, partial: 'issues/monthly_spent_hours'
+    render_on :view_issues_show_details_bottom, partial: 'issues/redmine_monthly_spent_hours'
 
     def view_issues_show_details_bottom(context = {})
       issue = context[:issue]
       if issue
         context[:controller].send(:render_to_string, {
-          partial: 'issues/monthly_spent_hours',
+          partial: 'issues/redmine_monthly_spent_hours',
           locals: {
             last_month_spent_hours: issue.last_month_spent_hours,
             this_month_spent_hours: issue.this_month_spent_hours,

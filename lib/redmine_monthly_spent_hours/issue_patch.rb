@@ -1,4 +1,4 @@
-module MonthlySpentHours
+module RedmineMonthlySpentHours
   module IssuePatch
     def self.included(base)
       base.class_eval do

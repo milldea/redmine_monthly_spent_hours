@@ -1,5 +1,5 @@
 # English strings go here for Rails i18n
 en:
-  monthly_spent_hours:
+  redmine_monthly_spent_hours:
     label_last_month_hours: "Last Month Total Spent Time"
     label_this_month_hours: "this Month Total Spent Time"
