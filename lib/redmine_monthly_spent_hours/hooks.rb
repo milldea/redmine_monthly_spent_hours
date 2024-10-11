@@ -1,8 +1,6 @@
 # 修正後のフッククラス
 module RedmineMonthlySpentHours
   class Hooks < Redmine::Hook::ViewListener
-    render_on :view_issues_show_details_bottom, partial: 'issues/redmine_monthly_spent_hours'
-
     def view_issues_show_details_bottom(context = {})
       issue = context[:issue]
       if issue
